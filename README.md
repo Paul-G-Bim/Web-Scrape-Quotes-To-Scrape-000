@@ -1,4 +1,4 @@
-Template for scraping a simple website page once.
+Example of scraping a static single webpage.
 
 The Golden Rules (Ethics)
 
