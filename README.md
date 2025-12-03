@@ -1,0 +1,1 @@
+Template for scraping a simple website page once.
