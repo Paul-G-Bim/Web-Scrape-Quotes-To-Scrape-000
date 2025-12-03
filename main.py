@@ -53,14 +53,14 @@ try:
     response = requests.get(url, headers=headers, timeout=15)
     response.raise_for_status() # Raises an HTTPError for bad responses (4xx or 5xx)
     print(f"Successfully retrieved page (Status: {response.status_code})")
-except requests.exceptions.HTTPError as errh:
-    print(f"HTTP Error occurred: {errh}")
+except requests.exceptions.HTTPError as err_h:
+    print(f"HTTP Error occurred: {err_h}")
     sys.exit(1)
-except requests.exceptions.ConnectionError as errc:
-    print(f"Connection Error occurred: {errc} (Check network or URL)")
+except requests.exceptions.ConnectionError as err_c:
+    print(f"Connection Error occurred: {err_c} (Check network or URL)")
     sys.exit(1)
-except requests.exceptions.Timeout as errt:
-    print(f"Timeout Error occurred: {errt}")
+except requests.exceptions.Timeout as err_t:
+    print(f"Timeout Error occurred: {err_t}")
     sys.exit(1)
 except requests.exceptions.RequestException as err:
     # Catches all other requests exceptions
