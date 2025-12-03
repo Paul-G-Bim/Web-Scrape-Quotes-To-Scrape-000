@@ -14,7 +14,7 @@ headers = {
 }
 
 # request the page
-response = requests.get(url, headers=headers)
+response = requests.get(url, headers=headers, timeout=15)
 
 # check request success
 if response.status_code == 200:
