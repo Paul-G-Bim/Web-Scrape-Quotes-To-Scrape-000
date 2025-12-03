@@ -9,3 +9,5 @@ Before writing code, you must understand the etiquette. Breaking these can get y
 2. Don't Hammer the Server: If you make 100 requests in 1 second, you look like a DDoS attack. Always add a time delay between requests.
 
 3. Identify Yourself: It is good practice to include a "User-Agent" string so the site knows you are a script, not a malicious bot.
+
+Note that this script has been set up for automation however the files are not included.
